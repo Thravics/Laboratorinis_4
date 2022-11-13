@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2C2C2C"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titletextview"
+        android:text="New note"
+        android:textColor="#BCBABA"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        ></TextView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BCBABA"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleimput"
+            android:hint="Title"
+            android:background="#302C2C2C"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionimput"
+            android:hint="Description"
+            android:background="#302C2C2C"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:lines="5"
+            android:gravity="top">
+        </EditText>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:backgroundTint="#BCBABA"
+        android:id="@+id/savebtn"
+        android:textColor="@color/black">
+    </com.google.android.material.button.MaterialButton>
+
+
+</LinearLayout>
